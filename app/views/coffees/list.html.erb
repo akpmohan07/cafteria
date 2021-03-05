@@ -1,0 +1,9 @@
+<div style="display: flex;">
+<%= @coffees.each do |copy|  %>
+    <div class="card" style="width: 1000px; margin: 10px">
+    <img src=<%= copy['img'] %> class="card-img-top" alt="...">
+    <div class="card-body">
+    <h5 class="card-title"><%= copy['name'] %> </h5>
+    </div>
+    </div>
+<% end %>
